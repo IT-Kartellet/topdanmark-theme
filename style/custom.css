@@ -4,11 +4,13 @@
 
 body {
     background: #dae5eb url([[pix:theme|background]]) center top no-repeat;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 #page {
-    padding-left: 180px;
-    padding-right: 180px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 
@@ -33,6 +35,9 @@ body {
     color: #414141;
 }
 
+/******************/
+/* Breadcrumb-nav */
+/******************/
 
 
 

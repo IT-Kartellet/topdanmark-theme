@@ -4,8 +4,7 @@
 
 body {
     background: #dae5eb url([[pix:theme|background]]) center top no-repeat;
-    padding-right: 5%;
-    padding-left: 5%;
+    font: 0.6875em/1.4545 Verdana,Arial,sans-serif;
 }
 
 #page {
@@ -13,7 +12,24 @@ body {
     padding-right: 8%;
 }
 
+#page-content {
+    
+}
 
+/***********/
+/* Regions */
+/***********/
+
+#region-main {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+/**********/
+/* Navbar */
+/**********/
 
 
 
@@ -35,12 +51,45 @@ body {
     color: #414141;
 }
 
+/*******************/
+/* Specific blocks */
+/*******************/
+
+.block_course_overview {
+    border-color: transparent;
+}
+
 /******************/
 /* Breadcrumb-nav */
 /******************/
 
+.breadcrumb {
+    background-image: linear-gradient(to bottom, #448cad, #256180);
+    color: #fff;
+}
+
+.breadcrumb a {
+    color: #fff;
+}
 
 
+
+.breadcrumb>li {
+    text-shadow: none;
+}
+
+.breadcrumb>li>.divider{
+    color: #fff;
+}
+
+/**********/
+/* Footer */
+/**********/
+
+#page-footer {
+    border: 1px solid #75bee9;
+    border-radius: 4px;
+}
 
 
 /* Custom CSS

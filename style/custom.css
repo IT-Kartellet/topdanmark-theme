@@ -34,7 +34,14 @@ body {
 /* Navbar */
 /**********/
 
+.navbar .container-fluid{
+    padding-right: 0;
+}
 
+.navbar .logininfo {
+    background-color: lawngreen;
+    padding-right: 20px;
+}
 
 
 

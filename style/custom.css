@@ -42,14 +42,81 @@ body {
 /* Navbar */
 /**********/
 
-.navbar .container-fluid{
+.navbar-fixed-top {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.navbar .brand {
+    padding: 5px 20px 5px;
+}
+
+@media screen and (max-width: 768px){
+    .navbar-fixed-top {
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+}
+
+    .navbar .container-fluid {
     padding-right: 0;
 }
 
-.navbar .logininfo {
-    background-color: lawngreen;
-    padding-right: 20px;
+.navbar .container-fluid {
+    border-top-right-radius: 5px;
 }
+
+@media screen and (min-width: 768px) {
+
+    .navbar-fixed-top .navbar-inner{
+        background-image: linear-gradient(to bottom, #448cad, #256180);
+        border-width: 0 0 1px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .navbar-fixed-top .navbar-inner a {
+        color: #fff;
+        text-shadow: none;
+    }
+
+    .navbar .dropdown-menu {
+        background-image: linear-gradient(to bottom, #448cad, #256180);
+    }
+
+    .navbar .dropdown-toggle {
+        background-image: linear-gradient(to bottom, #448cad, #256180);
+    }
+
+    .navbar .nav>li>a,
+    .navbar .nav>li>a:focus,
+    .navbar .nav>li>a:hover,
+    .navbar .nav li.dropdown.open>.dropdown-toggle,
+    .navbar .nav li.dropdown.active>.dropdown-toggle,
+    .navbar .nav li.dropdown.open.active>.dropdown-toggle {
+        color: #fff;
+        text-shadow: none;
+
+    }
+
+    .navbar .nav li.dropdown>.dropdown-toggle .caret {
+        border-top-color: #fff;
+        border-bottom-color: #fff;
+    }
+
+    .navbar .logininfo {
+        background-image: linear-gradient(to bottom, #97cf48, #75ab2d);
+        color: #fff;
+        padding-right: 20px;
+        padding-left: 10px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .navbar .logininfo a {
+        color: #fff;
+    }
+}
+
 
 
 

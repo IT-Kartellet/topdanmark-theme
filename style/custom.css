@@ -47,14 +47,65 @@ body {
     margin-right: 8%;
 }
 
+.navbar-fixed-top .navbar-inner {
+    background-image: linear-gradient(to bottom, #448cad, #256180);
+}
+
+.navbar-fixed-top .navbar-inner a {
+    color: #fff;
+    text-shadow: none;
+}
+
 .navbar .brand {
     padding: 5px 20px 5px;
+}
+
+.navbar .nav>li>a,
+.navbar .nav>li>a:focus,
+.navbar .nav>li>a:hover,
+.navbar .nav li.dropdown.open>.dropdown-toggle,
+.navbar .nav li.dropdown.active>.dropdown-toggle,
+.navbar .nav li.dropdown.open.active>.dropdown-toggle {
+    color: #fff;
+    text-shadow: none;
+    background: transparent;
+}
+
+.navbar .nav li.dropdown>.dropdown-toggle .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.navbar .logininfo {
+    color: #fff;
+}
+
+.navbar .btn-navbar {
+    background-image: linear-gradient(to bottom, #9bd449, #75ab2d);
+    background-color: #699828;
+}
+
+.navbar .btn-navbar:hover,
+.navbar .btn-navbar:focus,
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active,
+.navbar .btn-navbar.disabled,
+.navbar .btn-navbar[disabled] {
+    background-color: #699828;
 }
 
 @media screen and (max-width: 768px){
     .navbar-fixed-top {
         margin-right: -20px;
         margin-left: -20px;
+    }
+
+    .navbar .dropdown-menu {
+        background: transparent;
+    }
+
+    .navbar .dropdown-toggle {
+        background: transparent;
     }
 }
 
@@ -69,15 +120,9 @@ body {
 @media screen and (min-width: 768px) {
 
     .navbar-fixed-top .navbar-inner{
-        background-image: linear-gradient(to bottom, #448cad, #256180);
         border-width: 0 0 1px;
         border-bottom-right-radius: 8px;
         border-bottom-left-radius: 8px;
-    }
-
-    .navbar-fixed-top .navbar-inner a {
-        color: #fff;
-        text-shadow: none;
     }
 
     .navbar .dropdown-menu {
@@ -88,25 +133,8 @@ body {
         background-image: linear-gradient(to bottom, #448cad, #256180);
     }
 
-    .navbar .nav>li>a,
-    .navbar .nav>li>a:focus,
-    .navbar .nav>li>a:hover,
-    .navbar .nav li.dropdown.open>.dropdown-toggle,
-    .navbar .nav li.dropdown.active>.dropdown-toggle,
-    .navbar .nav li.dropdown.open.active>.dropdown-toggle {
-        color: #fff;
-        text-shadow: none;
-
-    }
-
-    .navbar .nav li.dropdown>.dropdown-toggle .caret {
-        border-top-color: #fff;
-        border-bottom-color: #fff;
-    }
-
     .navbar .logininfo {
         background-image: linear-gradient(to bottom, #97cf48, #75ab2d);
-        color: #fff;
         padding-right: 20px;
         padding-left: 10px;
         border-bottom-right-radius: 8px;
@@ -212,6 +240,12 @@ body {
     margin-bottom: 20px;
     padding: 5px;
     background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    #page-footer {
+        margin-top: 20px;
+    }
 }
 
 #page-footer #address-info {

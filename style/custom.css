@@ -4,7 +4,7 @@
 
 body {
     background: #dae5eb url([[pix:theme|background]]) center top no-repeat;
-    font: 0.6875em/1.4545 Verdana,Arial,sans-serif;
+    font-family: Verdana, Arial, sans-serif;
 }
 
 #page {
@@ -19,8 +19,15 @@ body {
     }
 }
 
-#page-content {
-
+input[type="button"],
+input[type="submit"],
+input#id_submitbutton,
+input#id_submitbutton:hover{
+    background-image: linear-gradient(to bottom, #9bd449, #75ab2d);
+    background-color: #699828 !important;
+    border: none;
+    color: #fff !important;
+    text-shadow: none;
 }
 
 /***********/
@@ -33,8 +40,6 @@ body {
     border-radius: 4px;
     margin-bottom: 20px;
 }
-
-
 
 
 
@@ -57,7 +62,7 @@ body {
 }
 
 .navbar .brand {
-    padding: 5px 20px 5px;
+    display: none;
 }
 
 .navbar .nav>li>a,
@@ -109,12 +114,8 @@ body {
     }
 }
 
-    .navbar .container-fluid {
-    padding-right: 0;
-}
-
 .navbar .container-fluid {
-    border-top-right-radius: 5px;
+    padding-right: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -123,6 +124,15 @@ body {
         border-width: 0 0 1px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 8px;
+        min-height: 0;
+    }
+
+    .navbar-text {
+        line-height: 22px;
+    }
+
+    .navbar .nav>li>a {
+        padding: 0;
     }
 
     .navbar .dropdown-menu {

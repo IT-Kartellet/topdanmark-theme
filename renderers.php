@@ -24,14 +24,16 @@ class theme_topdanmark_core_renderer extends theme_bootstrapbase_core_renderer{
     public function login_info($withlinks = null){
         $login_info = parent::login_info($withlinks);
 
+        $wrap_start = "";
+
         if(isloggedin()){
             if(isguestuser()){
-                $wrap_start = "<div id='is-guest'>";
+                $wrap_start .= "<div id='is-guest'>";
             }else{
-                $wrap_start = "<div id='is-logged-in'>";
+                $wrap_start .= "<div id='is-logged-in'>";
             }
         }else{
-            $wrap_start = "<div id='not-logged-in'>";
+            $wrap_start .= "<div id='not-logged-in'>";
         }
 
         $wrap_end = "</div>";
